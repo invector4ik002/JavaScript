@@ -193,6 +193,108 @@
     // } else if (lastNumber) {
     //     alert(`Ваша сумма в ${addAmount} рублей успешно зачислена.`);
     // };
+//Lesson-3
+//task-2
+    //
+    // let zero = "это ноль ",
+    //     evenNumber = 'четное число',
+    //     oddNumber = 'нечетное число';
+    // for (let i = 0; i <= 10; i++) {
+    //     if (i == 0) {
+    //         console.log(`${i}-${zero}`);
+    //     } else if (i % 2 == 0) {
+    //        console.log(`${i}-${evenNumber}`)
+    //     } else if (!i % 2 == 0) {
+    //         console.log(`${i}-${oddNumber}`)
+    //     }
+    // };
+//task-3
+    // const post = {
+    //     autor: 'john', //вывести этот текст 
+    //     postId: 23,
+    //     comments:[
+    //         {
+    //             userId: 10,
+    //             userName: 'Alex',
+    //             text: 'lorem ipsum',
+    //             rating: {
+    //                 likes: 10,
+    //                 dislikes: 2 //вывести это число 
+    //             }
+    //         },
+    //         {
+    //             userId: 5,  //вывести это число 
+    //             userName: 'Jane',
+    //             text: 'lorem ipsum 2', //вывести этот текст 
+    //             rating: {
+    //                likes: 3,
+    //                dislikes: 1
+    //             }
+    //         },
+    //     ]
+    // }   
+    // console.log(post.autor);
+    // console.log(post.comments[0].rating.dislikes);
+    // console.log(post.comments[1].userId);
+    // console.log(post.comments[1].text);
+//task-4
+    // const products = [
+    //     {
+    //         id: 3,
+    //         price: 200,
+    //     },
+    //     {
+    //         id: 4,
+    //         price: 900,
+    //     },
+    //     {
+    //         id: 1,
+    //         price: 1000,
+    //     },
+    // ];
+    // let considersDiscount = products.map(item => item.price - (item.price) / 100 * 15) 
+    // console.log(considersDiscount);
 
-    
-    
+//task-5
+    // const products = [
+    //     {
+    //         id: 3,
+    //         price: 127,
+    //         photos: [
+    //             '1.jpg',
+    //             '2.jpg',
+    //         ]
+    //     },
+    //     {
+    //         id: 5,
+    //         price: 499,
+    //         photos: []
+    //     },
+    //     {
+    //         id: 10,
+    //         price: 26,
+    //         photos: [
+    //             '3.jpg'
+    //         ]
+    //     },
+    //     {
+    //         id: 8,
+    //         price: 78,
+    //     }
+    // ];
+    // let photoSearch = products.filter(function(item){   
+    //     return item.photos && item.photos.length > 0 
+    // });
+    // console.log(photoSearch);
+    // let sortsPrice = products.sort((item1, item2) => {
+    //     return item1.price - item2.price;
+    // })
+    // console.log(sortsPrice);
+//task-6
+    // for (let i = 0; i < 10; i++) console.log(i);
+//task-7
+
+// for (let i = 'x'; i.length <= 20; i++) {     
+//     i+="x"
+//     console.log(i)
+// }
