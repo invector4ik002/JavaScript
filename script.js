@@ -194,6 +194,20 @@
     //     alert(`Ваша сумма в ${addAmount} рублей успешно зачислена.`);
     // };
 //Lesson-3
+//task-1
+    //
+    // let zero = "это ноль ",
+    //     evenNumber = 'четное число',
+    //     oddNumber = 'нечетное число';
+    // for (let i = 0; i <= 10; i++) {
+    //     if (i == 0) {
+    //         console.log(`${i}-${zero}`);
+    //     } else if (i % 2 == 0) {
+    //        console.log(`${i}-${evenNumber}`)
+    //     } else if (!i % 2 == 0) {
+    //         console.log(`${i}-${oddNumber}`)
+    //     }
+    // };
 //task-2
     //
     // let zero = "это ноль ",
@@ -298,3 +312,33 @@
 //     i+="x"
 //     console.log(i)
 // }
+//lesson-4
+//task-1 
+let lowercaseNumbers = prompt('введите число от 0 до 999');
+let arrlowercaseNumbers = lowercaseNumbers.split('');
+let arrNumber = arrlowercaseNumbers.map(function(item) {
+    return Number(item);
+});
+
+class Numbers  {
+    constructor(hundreds, tens, units) {       
+        if (arrNumber.length == 3) {
+            this.units =  units,// это единицы
+            this.tens = tens, // это десятки
+            this.hundreds = hundreds // это сотни
+        } else if (arrNumber.length == 2) {
+            this.units =  arrNumber[1],// это единицы
+            this.tens = arrNumber[0], // это десятки
+            this.hundreds = 0 // это сотни
+        } else if (arrNumber.length == 1) {
+            this.units = arrNumber[0],// это единицы
+            this.tens = 0, // это десятки
+            this.hundreds = 0 // это сотни
+        } else {
+            alert ('введите число от 0 до 999');
+        }  
+    }
+}
+
+const newObjectNumbers = new Numbers(...arrNumber);
+console.log(newObjectNumbers);
