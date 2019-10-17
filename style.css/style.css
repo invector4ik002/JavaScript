@@ -1,0 +1,50 @@
+.container {
+    width: 800px;
+    box-sizing: border-box;;
+    margin: 0 auto;
+}
+body {
+    width: 100%;
+    background-color: darkblue;
+}
+.dox-timing {
+    color:darkorange;
+}
+.video {
+    max-width: 600px;
+    margin: 0 auto;
+    outline: 1px solid orange;
+    padding: 10px;
+}
+.player {
+    width: 600px;
+}
+video {
+    width: 100%;
+    
+}
+.timing {
+    width: 100%;
+}
+.currentTime {
+    color: darkorange;
+    width: 100%;
+}
+.fa-play:before {
+    content: "\f04b";
+    color: orange;
+}
+.fa-pause:before {
+    content: "\f04c";
+    color: orange;
+}
+section, form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    outline: 1px solid orange;
+}
+form {
+    outline: 1px solid orange;
+    padding: 10px;
+}
